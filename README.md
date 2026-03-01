@@ -59,7 +59,7 @@ O modelo segue a estrutura clássica do Vision Transformer:
 | --- | --- |
 | Taxa de Aprendizado | 1e-4 |
 | --- | --- |
-| Épocas | 10 (conforme script original) |
+| Épocas | 10 |
 | --- | --- |
 
 ##  Como Executar
@@ -78,6 +78,6 @@ O modelo segue a estrutura clássica do Vision Transformer:
 
 O treinamento gera um arquivo log.csv com o histórico de métricas (acurácia e perda). O modelo utiliza EarlyStopping e ReduceLROnPlateau para otimizar o processo de convergência e evitar overfitting.
 
-## 📝 Licença
+## Licença
 
 Este projeto é para fins educacionais e de pesquisa. O dataset EuroSAT original é fornecido pela equipe do DFKI.
