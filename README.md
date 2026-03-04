@@ -1,6 +1,6 @@
 # Classificador de Imagens de Satélite Sentinel-2 com Vision Transformer (ViT)
 
-Este projeto implementa uma arquitetura **Vision Transformer (ViT)** utilizando TensorFlow e Keras para classificar imagens de satélite do conjunto de dados **EuroSAT** (Sentinel-2). O modelo é capaz de identificar 10 categorias diferentes de uso do solo e cobertura terrestre.
+Este projeto é um exemplo que  implementa uma arquitetura **Vision Transformer (ViT)** utilizando TensorFlow e Keras para classificar imagens de satélite do conjunto de dados **EuroSAT** (Sentinel-2). O modelo é capaz de identificar 10 categorias diferentes de uso do solo e cobertura terrestre.
 
 ## Visão Geral
 
@@ -23,12 +23,10 @@ O modelo classifica as imagens em 10 classes:
 
 ## Tecnologias Utilizadas
 
-- **Python 3.x**
+- **Python 3.12**
 - **TensorFlow / Keras**: Construção e treinamento do modelo.
 - **KaggleHub**: Download automatizado do dataset.
 - **OpenCV**: Processamento de imagens.
-- **Patchify**: Divisão das imagens em patches.
-- **Matplotlib**: Visualização de resultados.
 - **Scikit-learn**: Divisão e embaralhamento dos dados.
 
 ## Arquitetura do Modelo
@@ -72,12 +70,9 @@ O modelo segue a estrutura clássica do Vision Transformer:
 - **Treinamento**:  
     Execute o script para iniciar o carregamento dos dados, pré-processamento e treinamento. O modelo salvo será armazenado em files/model.h5.
 - **Predição**:  
-    O script inclui funções para realizar predições em imagens de teste e também em imagens externas através da função predict_image(path, hp).
+    O script inclui funções para realizar predições em imagens de teste.
 
-## Resultados e Validação
-
-O treinamento gera um arquivo log.csv com o histórico de métricas (acurácia e perda). O modelo utiliza EarlyStopping e ReduceLROnPlateau para otimizar o processo de convergência e evitar overfitting.
 
 ## Licença
 
-Este projeto é para fins educacionais e de pesquisa. O dataset EuroSAT original é fornecido pela equipe do DFKI.
+Este projeto é para fins educacionais. O dataset EuroSAT original é fornecido pela equipe do DFKI.
